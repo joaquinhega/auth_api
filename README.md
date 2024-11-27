@@ -48,7 +48,17 @@ Esta API maneja la autenticación de usuarios en el sistema **Ecommerce**. Permi
     `reset_token` varchar(255) DEFAULT NULL,
     `reset_token_expiry` datetime DEFAULT NULL
   )
-8. **Probar los endpoints:**
+7.  **Configurar variables de entorno**
+  En la carpeta principal "auth_api" (o similar) crear un nuevo archivo con el nombre ".env" y asignarle el siguiente codigo: 
+     ```
+      DB_HOST = localhost
+      DB_USER = root
+      DB_PASSWORD = 
+      DB_NAME =  auth
+      JWT_SECRET=mi_clave_secreta
+     ```
+   Esto es para asignar los valores de ingreso hacia la base de datos. 
+9. **Probar los endpoints:**
    - El servidor estará disponible en `http://localhost:3000`.
    - Usa herramientas como **Postman**, **Insomnia**, o cURL para interactuar con la API.
 ## 🚀 Endpoints disponibles
